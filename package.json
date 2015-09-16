@@ -1,0 +1,8 @@
+{
+  "name": "blue-panel",
+  "version": "0.1.0",
+  "description": "A web panel for MTA:SA servers",
+  "main": "src/app.js",
+  "author": "Ahmed \"JR10\" Hamdy",
+  "license": "MIT"
+}
