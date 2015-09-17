@@ -19,5 +19,6 @@ require('http')
   })
   .listen(port);
 
+app.use(favicon(path.join(__dirname, '..', 'public', 'assets', 'favicon.ico')));
 app.use(morgan('dev'));
 app.use(express.static(path.join(__dirname, '..', 'public')));
