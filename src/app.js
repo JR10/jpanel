@@ -20,3 +20,4 @@ require('http')
   .listen(port);
 
 app.use(morgan('dev'));
+app.use(express.static(path.join(__dirname, '..', 'public')));
