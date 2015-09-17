@@ -18,3 +18,5 @@ require('http')
     throw error;
   })
   .listen(port);
+
+app.use(morgan('dev'));
