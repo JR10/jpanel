@@ -1,5 +1,5 @@
 {
-  "name": "blue-panel",
+  "name": "jpanel",
   "version": "0.1.0",
   "description": "A web panel for MTA:SA servers",
   "main": "src/app.js",

@@ -2,7 +2,7 @@
 
 var express = require('express'),
     morgan  = require('morgan'),
-    debug   = require('debug')('blue:server'),
+    debug   = require('debug')('jpanel:server'),
     path    = require('path'),
     favicon = require('serve-favicon');
 
