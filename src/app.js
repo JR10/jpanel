@@ -1,3 +1,5 @@
+'use strict';
+
 var express = require('express'),
     morgan  = require('morgan'),
     debug   = require('debug')('blue:server'),
