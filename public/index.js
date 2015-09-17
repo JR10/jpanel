@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('blue-panel', ['ngRoute']);
+angular.module('app', ['ngRoute']);
