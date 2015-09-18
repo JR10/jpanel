@@ -6,18 +6,17 @@ var express = require('express'),
     path    = require('path'),
     favicon = require('serve-favicon');
 
-var port = 3000; // TEMP
+var config = require('../config')
 
 var app = express();
 require('http')
   .Server(app)
-  .on('listening', function() {
-    debug('Server started listening on '+port);
-  })
   .on('error', function(error) {
     throw error;
   })
-  .listen(port);
+  .listen(config.webserver.port || 3000, function() {
+    debug('Server started listening on '+ config.webserver.port);
+  });
 
 app.use(favicon(path.join(__dirname, '..', 'public', 'files', 'favicon.ico')));
 app.use(morgan('dev'));
