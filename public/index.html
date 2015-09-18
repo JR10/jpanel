@@ -1,6 +1,8 @@
 <html ng-app="app" ng-strict-di>
   <head>
-    <title></title>
+    <title ng-controller="TitleCtrl as title" ng-bind="'jPanel - '+ title.get()"></title>
+
+    <base href="/"/>
 
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -40,5 +42,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
     <script src="https://code.angularjs.org/1.4.5/angular-route.min.js"></script>
     <script src="index.js"></script>
+    <script src="ng/services/title.js"></script>
+    <script src="ng/controllers/TitleCtrl.js"></script>
   </body>
 </html>
