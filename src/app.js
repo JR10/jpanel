@@ -22,3 +22,7 @@ require('http')
 app.use(favicon(path.join(__dirname, '..', 'public', 'files', 'favicon.ico')));
 app.use(morgan('dev'));
 app.use(express.static(path.join(__dirname, '..', 'public')));
+
+app.get('*', function(req, res) {
+  res.sendFile(path.join(__dirname, '..', 'public', 'index.html'));
+});
