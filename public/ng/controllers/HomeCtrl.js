@@ -3,5 +3,5 @@
 angular
   .module('app')
   .controller('HomeCtrl', ['title', function(title) {
-    title.set('Home');
+    title.text = 'Home';
   }]);
