@@ -1,3 +1,5 @@
+'use strict';
+
 var router = require('express').Router(),
     path   = require('path');
 
