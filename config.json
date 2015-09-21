@@ -1,5 +1,11 @@
 {
   "webserver": {
     "port": 3000
+  },
+  "mta": {
+    "host": "localhost",
+    "port": 22005,
+    "username": "",
+    "password": ""
   }
 }
