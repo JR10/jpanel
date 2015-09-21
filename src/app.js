@@ -6,7 +6,7 @@ var express = require('express'),
     path    = require('path'),
     favicon = require('serve-favicon');
 
-var config = require('../config')
+var config = require('../config');
 
 var app = express();
 require('http')
