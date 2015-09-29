@@ -4,7 +4,8 @@ var express = require('express'),
     morgan  = require('morgan'),
     debug   = require('debug')('jpanel:server'),
     path    = require('path'),
-    favicon = require('serve-favicon');
+    favicon = require('serve-favicon'),
+    server  = require('./app.mta');
 
 var config = require('../config');
 
@@ -25,4 +26,7 @@ app.use('/api', require('./app.api'));
 
 app.get('*', function(req, res) {
   res.sendFile(path.join(__dirname, '..', 'public', 'index.html'));
+  server.call('jpanel', 'getServerInfo', function(err, data) {
+    
+  });
 });
